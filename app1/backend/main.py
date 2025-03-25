@@ -27,7 +27,7 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
 
 # DIRECTLY SET YOUR API KEY HERE
-GROQ_API_KEY = "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"  # Your API key should already be here
+GROQ_API_KEY = "***********************************" # Your API key should already be here
 
 # Initialize Groq client with direct API key
 try:
