@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Frontend App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Basic Frontend App</h1>
+        </header>
+        
+        <section class="greeting-section">
+            <h2>Greeting</h2>
+            <div class="form-group">
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button id="greetButton">Greet Me</button>
+            </div>
+            <div id="greetingResult" class="result"></div>
+        </section>
+        
+        <section class="todo-section">
+            <h2>Todo List</h2>
+            <button id="loadTodosButton">Load Todos</button>
+            <ul id="todoList" class="todo-list"></ul>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+<head>
+    <link rel="stylesheet" href="http://localhost:8000/static/css/chat.css">
+</head>
+    <script src="http://localhost:8000/static/js/chat.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                initChatWidget({
+                    apiUrl: 'http://localhost:8000/api/chat',
+                });
+            }, 500);
+        });
+    </script>
+</body>

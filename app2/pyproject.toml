@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "basic-frontend-app"
+version = "0.1.0"
+description = "A basic frontend application with Python Flask"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.12"
+flask = "2.0.1"
+werkzeug = "2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
