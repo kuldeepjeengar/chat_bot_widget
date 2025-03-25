@@ -14,8 +14,8 @@ def index():
 def greet():
     data = request.json
     name = data.get('name', 'Guest')
-    return jsonify({'message': f'Hello, {name}!'})
-
+    return jsonify({'message': f'Hello, {name}!'})   
+print("----------------")
 @app.route('/api/todos', methods=['GET'])
 def get_todos():
     # Sample data
